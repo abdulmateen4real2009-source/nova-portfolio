@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #050508;
+  color: white;
+  transition: 0.3s;
+}
+
+/* BACKGROUND GLOW */
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 20%, #00f0ff33, transparent 40%),
+              radial-gradient(circle at 80% 80%, #7a5cff33, transparent 40%);
+  z-index: -1;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.logo {
+  font-weight: bold;
+  color: #00f0ff;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 70px;
+  margin: 0;
+  background: linear-gradient(90deg, #00f0ff, #7a5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.type {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00f0ff;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00f0ff;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  padding: 25px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #00f0ff;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 220px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+/* LIGHT MODE */
+.light {
+  background: #f5f5f5;
+  color: black;
+}
