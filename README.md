@@ -18,7 +18,23 @@ NOVA is a sleek, dark-themed portfolio designed to:
 * Showcase creative work
 * Convert visitors into leads
 
-It combines **modern UI design, animations, and clean structure** to deliver a premium experience.
+It combines **modern UI design, smooth animations, and a clean layout** to deliver a premium experience.
+
+---
+
+## 🎯 What This Project Solves
+
+Many beginner portfolios:
+
+* Look basic
+* Don’t convert visitors
+* Lack real interaction
+
+**NOVA solves this by focusing on:**
+
+* Visual appeal
+* User experience
+* Clear call-to-action (hire/contact)
 
 ---
 
@@ -66,7 +82,7 @@ To run this project locally:
 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/nova-portfolio.git
+git clone   https://github.com/abdulmateen4real2009-source/nova-portfolio.git
 ```
 
 2. Open the folder
@@ -89,20 +105,32 @@ To deploy:
 
 ## 📸 Screenshots
 
-*(.....................................................)*
+> (...........................................)
 
 ---
 
 ## 📞 Contact Me
 
 * 📱 WhatsApp: https://wa.me/2349135196246
-* 💼 GitHub: https://github.com/abdulmateen4real2009-source/nova-portfolio
+* 💼 GitHub: https://github.com/abdulmateen4real2009-source/nova-portfolio
+
+---
+
+## 💼 Available For Work
+
+I’m currently available for:
+
+* Logo & banner design
+* Landing page development
+* Content writing
+
+👉 Message me on WhatsApp for fast response.
 
 ---
 
 ## 💡 Future Improvements
 
-* Add more real client projects
+* Add real client projects
 * Improve animations with GSAP
 * Add backend contact form
 * SEO optimization
