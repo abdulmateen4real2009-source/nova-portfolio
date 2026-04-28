@@ -6,7 +6,7 @@ body {
   transition: 0.3s;
 }
 
-/* BACKGROUND GLOW */
+/* BACKGROUND */
 .bg {
   position: fixed;
   width: 100%;
@@ -31,26 +31,44 @@ header {
 /* HERO */
 .hero {
   height: 100vh;
-  text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
 }
 
-.hero h1 {
-  font-size: 70px;
+.hero-content h1 {
+  font-size: 80px;
   margin: 0;
+  letter-spacing: 2px;
   background: linear-gradient(90deg, #00f0ff, #7a5cff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.type {
-  color: #aaa;
-  margin-top: 10px;
+.tagline {
+  font-size: 22px;
+  margin-top: 15px;
+  max-width: 700px;
+  line-height: 1.4;
 }
 
-/* BUTTON */
+.tagline span {
+  color: #00f0ff;
+  font-weight: bold;
+}
+
+.subtext {
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+/* BUTTONS */
+.cta {
+  margin-top: 25px;
+}
+
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -66,6 +84,36 @@ header {
 .btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px #00f0ff;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  margin-left: 10px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 40px;
+  color: #00f0ff;
+  margin: 0;
+}
+
+.stat p {
+  opacity: 0.7;
 }
 
 /* SECTIONS */
@@ -99,29 +147,46 @@ header {
 
 /* GALLERY */
 .gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 20px;
 }
 
-.gallery img {
-  width: 220px;
-  border-radius: 10px;
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
   cursor: pointer;
+}
+
+.project-card img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.15);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  opacity: 0;
   transition: 0.3s;
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
+.project-card:hover .overlay {
+  opacity: 1;
 }
 
 /* MODAL */
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.9);
@@ -132,10 +197,4 @@ header {
 .modal img {
   max-width: 80%;
   border-radius: 10px;
-}
-
-/* LIGHT MODE */
-.light {
-  background: #f5f5f5;
-  color: black;
 }
